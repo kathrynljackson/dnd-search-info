@@ -10,9 +10,33 @@ By KJ and Some Nerd
 - I can see a search bar which updates results when I click on the search Icon
 - I can a spell search by name
 - I can filter spells by level
+   - 0 through 9
 - I can filter spells by class (class icons)
+   - (none)
+   - barbarian
+   - bard
+   - cleric
+   - druid
+   - fighter
+   - monk
+   - paladin
+   - ranger
+   - rogue
+   - sorcerer
+   - warlock
+   - wizard
+   - artificer
+   - blood hunter
 - I can filter spells by rulebook
 - I can filter spells by school (color)
+   - abjuration
+   - alteration
+   - conjuration
+   - divination
+   - enchantment
+   - illusion
+   - invocation
+   - necromancy
 - I can see what filters I have selected
 
 
