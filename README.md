@@ -2,6 +2,17 @@
 
 By KJ and Some Nerd
 
+## Links
+
+[Figjam Board]()
+
+## Iterations
+
+1. I can see spell cards on the screen
+
+2. I can search through the spell cards
+
+3. I can filter the spell cards
 ## User Stories
 
 - I can visit the website and see spell categories
@@ -47,3 +58,5 @@ By KJ and Some Nerd
 - I can filter by duration
 - I can filter by ritual
 - I can filter by concentration
+- important info in the description is highlighted/emphasised
+- add tooltips with more detailed info
