@@ -4,7 +4,8 @@ By KJ and Some Nerd
 
 ## Links
 
-[Figjam Board]()
+[Figjam Board](https://www.figma.com/file/8JOvjQwyuhMSbWuLcZgMxw/D%26D-5e-Spell-Search?node-id=0%3A1&t=hBRiFvhuAuVTbrAF-1)
+[5e Open Api Docs](https://open5e.com/api-docs)
 
 ## Iterations
 
