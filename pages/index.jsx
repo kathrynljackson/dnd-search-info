@@ -1,22 +1,21 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
 import React from 'react'
 import styles from '../styles/Home.module.css'
-import { get } from 'http'
+import SpellCard from './SpellCard'
 
 export default class Home extends React.Component {
   constructor(){
     super()
     this.state = {
-      spells: {}
+      spells: []
     }
   }
 
   getSpells = () => {
     return fetch('https://api.open5e.com/spells/')
       .then(response => response.json())
-      .then(response => this.updateSpells(response))
+      .then(response => this.updateSpells(response.results))
   }
 
   updateSpells = (response) => {
@@ -32,7 +31,9 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className={styles.container}>
-       
+        <ul>
+          {this.state.spells.map(spell => <SpellCard key={spell.slug} spellData={spell} />)}
+        </ul>
       </div>
     )
   }
