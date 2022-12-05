@@ -36,11 +36,16 @@ export default class Home extends React.Component {
     const spells = this.state.spells;
 
     return (
-      <div className={styles.container}>
-        <ul>
-          {spells.map(spell => <SpellCard key={spell.slug} spellData={spell} />)}
-        </ul>
-      </div>
+      <section className={styles.container}>
+        <section className={styles.header}>
+          <h1 className={styles.title}>Spell Database</h1>
+        </section>
+        <main className={styles.main}>
+          <section className={styles.grid}>
+            {spells.map(spell => <SpellCard key={spell.slug} spellData={spell} />)}
+          </section>
+        </main>
+      </section>
     )
   }
 }
