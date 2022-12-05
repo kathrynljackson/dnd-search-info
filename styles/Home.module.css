@@ -30,14 +30,26 @@
 .input {
   background: none;
   width: 100%;
-  max-width: 800px;
   height: 45px;
   padding: 0 0.2rem;
   font: inherit;
   border: none;
-  border-bottom: 3px solid rgb(255, 255, 255);
   color:rgb(220, 220, 220);
+}
+
+.inputContainer {
+  border-bottom: 3px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+  max-width: 800px;
   margin: 0 0 3rem;
+}
+
+.searchIcon {
+  margin: 0 0.5rem;
 }
 
 .input:focus {
