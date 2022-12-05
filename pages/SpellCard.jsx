@@ -55,7 +55,7 @@ export default function spellCard({ spellData }) {
                     <p>{classes}</p>
                 </div>
             </section>
-            <div className={styles.tagsContainer}>
+            <section className={styles.tagsContainer}>
                 <Chip className={styles.chip} label={time} />
                 <Chip className={styles.chip} label={range} />
                 <Chip className={styles.chip} label={duration} />
@@ -63,7 +63,7 @@ export default function spellCard({ spellData }) {
                 {spellRitualChip(ritual)}
                 {spellMaterialsChip(material)}
                 <Chip className={styles.chip} label={components} />
-            </div>
+            </section>
             <section className={styles.descriptions}>
                 <div className={styles.description}>
                     <p>{description}</p>
