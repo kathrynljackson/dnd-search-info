@@ -9,30 +9,34 @@ export default class Home extends React.Component {
     super()
     this.state = {
       spells: []
-    }
+    };
   }
 
   getSpells = () => {
     return fetch('https://api.open5e.com/spells/')
       .then(response => response.json())
-      .then(response => this.updateSpells(response.results))
+      .then(response => this.updateSpells(response))
   }
 
   updateSpells = (response) => {
     this.setState({
-      spells: response
-    })
+      spells: response.results,
+      count: response.count,
+      next: response.next
+    });
   }
 
   componentDidMount() {
-    this.getSpells()
+    this.getSpells();
   }
 
   render() {
+    const spells = this.state.spells;
+
     return (
       <div className={styles.container}>
         <ul>
-          {this.state.spells.map(spell => <SpellCard key={spell.slug} spellData={spell} />)}
+          {spells.map(spell => <SpellCard key={spell.slug} spellData={spell} />)}
         </ul>
       </div>
     )
