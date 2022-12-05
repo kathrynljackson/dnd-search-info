@@ -41,6 +41,7 @@ export default class Home extends React.Component {
           <h1 className={styles.title}>Spell Database</h1>
         </section>
         <main className={styles.main}>
+        <input type="search" placeholder="Search spells by title..." className={styles.input} />
           <section className={styles.grid}>
             {spells.map(spell => <SpellCard key={spell.slug} spellData={spell} />)}
           </section>
