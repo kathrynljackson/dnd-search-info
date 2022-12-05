@@ -8,7 +8,9 @@ export default class Home extends React.Component {
   constructor(){
     super()
     this.state = {
-      spells: []
+      spells: [],
+      count: 0,
+      next: ''
     };
   }
 
