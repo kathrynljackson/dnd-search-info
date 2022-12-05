@@ -33,7 +33,14 @@
 }
 
 .tagsContainer {
-    margin-top: 0.5rem;
+    margin-top: 0.75rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.chip {
+    margin: 0 0.25rem 0.5rem 0.25rem;
 }
 
 .description {

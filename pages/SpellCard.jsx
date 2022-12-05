@@ -11,6 +11,35 @@ export default function spellCard({ spellData }) {
     const range = spellData.range;
     const level = spellData.level;
     const time = spellData.casting_time;
+    const duration = spellData.duration;
+    const ritual = spellData.ritual;
+    const material = spellData.material;
+    const components = spellData.components;
+
+    const spellConcentrationChip = (con) => {
+        if(con === "yes"){
+            return (
+                <Chip className={styles.chip} label="Concentration" />
+            )
+        }
+    }
+
+    const spellRitualChip = (rit) => {
+        if(rit === "yes"){
+            return (
+                <Chip className={styles.chip} label="Ritual" />
+            )
+        }
+    }
+
+    const spellMaterialsChip = (materials) => {
+        if(materials !== ""){
+            return (
+                <Chip className={styles.chip} label={materials} />
+            )
+        }
+    }
+
 
     return(
         <section className={styles.container}>
@@ -27,6 +56,13 @@ export default function spellCard({ spellData }) {
                 </div>
             </section>
             <div className={styles.tagsContainer}>
+                <Chip className={styles.chip} label={time} />
+                <Chip className={styles.chip} label={range} />
+                <Chip className={styles.chip} label={duration} />
+                {spellConcentrationChip(concentration)}
+                {spellRitualChip(ritual)}
+                {spellMaterialsChip(material)}
+                <Chip className={styles.chip} label={components} />
             </div>
             <section className={styles.descriptions}>
                 <div className={styles.description}>
